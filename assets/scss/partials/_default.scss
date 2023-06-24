@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    transition: .5s ease-in-out;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+    color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+}
+
+img {
+    vertical-align: middle;
+    object-fit: cover;
+    width: 100%;
+}
+
+section {
+    padding: 4.5rem 0;
+}
+
+i {
+    cursor: pointer;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.containerOther{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section__subtitle {
+    color: $primaryColor;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+
+    @include breakPoint(576px) {
+        font-size: 1rem;
+    }
+}
+
+.section__title {
+    color: $secondaryColor;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    @include breakPoint(576px) {
+      font-size: 1.5rem;
+    }
+    &::after{
+      content: "";
+      width: 190px;
+      height: 5px;
+      background: $primaryColor;
+      display: block;
+      margin: 0 auto;
+    }
+    &::before{
+      content: "";
+      background-color: white;
+      height: 5px;
+      width: 5px;
+      display: block;
+      @include positioning(absolute, auto, auto, 0, 40%);
+      animation: sectionTitle 5s infinite linear;
+    }
+  }
+  
+

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup template</title>
+
+    <!-- Meta tags -->
+    <meta name="author" content="Dusko Vokic" />
+    <meta
+      name="keywords"
+      content="Sass, Flexbox, Grid, Position layout Template, HTML template, CSS, CSS template"
+    />
+    <meta name="description" content="Startup template for beginers" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="title" content="Startup project in Sass" />
+
+    <!-- Favicon -->
+    <link href="assets/img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome  CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+
+
+
+
+
+    <!-- Top Navbar section starts -->
+    <div class="topnavbar">
+      <article class="topnavbar__item">
+        <span class="topnavbar__info"
+          ><i class="topnavbar__icon fa-solid fa-location-dot"></i> Belgrade,
+          Serbia</span
+        >
+        <span class="topnavbar__info"
+          ><i class="topnavbar__icon fa-solid fa-phone"></i>+012 345 6789</span
+        >
+        <span class="topnavbar__info"
+          ><i class="topnavbar__icon fa-solid fa-envelope"></i
+          >info@admin.com</span
+        >
+      </article>
+      <article class="topnavbar__item">
+        <a href="#" class="topnavbar__link fa-brands fa-twitter"></a>
+        <a href="#" class="topnavbar__link fa-brands fa-facebook"></a>
+        <a href="#" class="topnavbar__link fa-brands fa-instagram"></a>
+        <a href="#" class="topnavbar__link fa-brands fa-linkedin-in"></a>
+        <a href="#" class="topnavbar__link fa-brands fa-youtube"></a>
+      </article>
+    </div>
+    <!-- Top Navbar section ends -->
+
+
+
+
+
+    <!-- Header section starts -->
+    <header class="header">
+      <!-- Nav section starts -->
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">
+          <i class="fa-solid fa-user"></i>
+          <h1 class="nav__heading">Startup</h1>
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item flex">
+            <a href="#about" class="nav__link">About</a>
+            <i class="fas fa-sort-down"></i>
+            <div class="nav__dropdown">
+              <a href="#">Page1</a>
+              <a href="#">Page2</a>
+              <a href="#">Page3</a>
+            </div>
+          </li>
+          <li class="nav__item flex">
+            <a href="#services" class="nav__link">Services</a>
+            <i class="fas fa-sort-down"></i>
+            <div class="nav__dropdown">
+              <a href="#">Page1</a>
+              <a href="#">Page2</a>
+              <a href="#">Page3</a>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="#blog" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item flex">
+            <a href="#pages" class="nav__link">Pages</a>
+            <i class="fas fa-sort-down"></i>
+            <div class="nav__dropdown">
+              <a href="#">Page1</a>
+              <a href="#">Page2</a>
+              <a href="#">Page3</a>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav__hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <!-- Nav section ends -->
+
+      <div class="header__content">
+        <p class="header__p" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">Creative & Innovative</p>
+        <h2 class="header__heading" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Creative & Innovative Digital Solution</h2>
+        <div class="header__btns" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
+          <a href="#">free quote</a>
+          <a href="#">contact us</a>
+        </div>
+      </div>
+    </header>
+    <!-- Header section ends -->
+
+
+
+
+
+    <!-- Numbers section starts -->
+    <section class="container numbers">
+      <article class="numbers__item"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+        <i class="fa-solid fa-user-secret"></i>
+        <div class="numbers__box">
+          <h3>Happy Clients</h3>
+          <h6>123456</h6>
+        </div>
+      </article>
+      <article class="numbers__item"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+        <i class="fa-solid fa-check"></i>
+        <div class="numbers__box">
+          <h3>Projects Done</h3>
+          <h6>123456</h6>
+        </div>
+      </article>
+      <article class="numbers__item"  data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
+        <i class="fa-solid fa-award"></i>
+        <div class="numbers__box">
+          <h3>Win Awards</h3>
+          <h6>123456</h6>
+        </div>
+      </article>
+    </section>
+    <!-- Numbers section ends -->
+
+
+
+
+
+    <!-- About section starts -->
+    <section class="about container" id="about">
+      <article class="about__item"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+        <h5 class="section__subtitle">about us</h5>
+        <h2 class="section__title">
+          The Best IT Solution With 10 Years of Experience
+        </h2>
+        <p class="about__p">
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit.
+          Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit,
+          sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod
+          magna dolore erat amet
+        </p>
+        <div class="about__box">
+          <div class="about__box__item">
+            <i class="fa-solid fa-check"></i>
+            <span>Award Winning</span>
+          </div>
+          <div class="about__box__item">
+            <i class="fa-solid fa-check"></i>
+            <span>Professional Staff</span>
+          </div>
+          <div class="about__box__item">
+            <i class="fa-solid fa-check"></i>
+            <span>24/7 Support</span>
+          </div>
+          <div class="about__box__item">
+            <i class="fa-solid fa-check"></i>
+            <span>Fair Prices</span>
+          </div>
+        </div>
+        <div class="about__contact">
+          <i class="fa-solid fa-phone"></i>
+          <div class="about__contact__text">
+            <p>Call to ask any question</p>
+            <h5>+012 345 6789</h5>
+          </div>
+        </div>
+        <a href="#" class="about__btn">request a quote</a>
+      </article>
+      <article class="about__item"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+        <img src="assets/img/about.jpg" alt="about img" class="about__img" />
+      </article>
+    </section>
+    <!-- About section ends -->
+
+
+
+
+
+    <!-- WHY CHOOSE US section starts -->
+    <section class="wcu container" id="wcu">
+      <h5 class="section__subtitle">WHY CHOOSE US</h5>
+      <h2 class="section__title">
+        We Are Here to Grow Your Business Exponentially
+      </h2>
+      <div class="wcu__wrapper">
+        <article class="wcu__item"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          <i class="fa fa-cubes"></i>
+          <h4>Best In Industry</h4>
+          <p class="wcu__item__p1">
+            Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam
+            dolor
+          </p>
+          <i class="fa-solid fa-award"></i>
+          <h4>Award Winning</h4>
+          <p>
+            Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam
+            dolor
+          </p>
+        </article>
+        <article class="wcu__item"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <img src="assets/img/feature.jpg" alt="wcu img" class="wcu__img" />
+        </article>
+        <article class="wcu__item"  data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
+          <i class="fa-solid fa-users"></i>
+          <h4>Professional Staff</h4>
+          <p class="wcu__item__p3">
+            Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam
+            dolor
+          </p>
+          <i class="fa-solid fa-phone"></i>
+          <h4>24/7 Support</h4>
+          <p>
+            Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam
+            dolor
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- WHY CHOOSE US section ends -->
+
+
+
+
+
+
+    <!-- Team section starts -->
+    <section class="team container" id="team">
+      <h2 class="section__subtitle">TEAM MEMBERS</h2>
+      <h3 class="section__title">
+        Professional Stuffs Ready to Help Your Business
+      </h3>
+      <div class="team__wrapper">
+        <article class="team__item"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          <div class="team__img">
+            <img
+              src="assets/img/team-1.jpg"
+              alt="team img"
+              class="team_picture"
+            />
+            <div class="team__overlay">
+              <div class="team__icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="team__text">
+            <h4 class="team__name">Full Name</h4>
+            <p class="team__position">designation</p>
+          </div>
+        </article>
+        <article class="team__item"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <div class="team__img">
+            <img
+              src="assets/img/team-2.jpg"
+              alt="team img"
+              class="team_picture"
+            />
+            <div class="team__overlay">
+              <div class="team__icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="team__text">
+            <h4 class="team__name">Full Name</h4>
+            <p class="team__position">DESIGNATION</p>
+          </div>
+        </article>
+        <article class="team__item"  data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
+          <div class="team__img">
+            <img
+              src="assets/img/team-3.jpg"
+              alt="team img"
+              class="team_picture"
+            />
+            <div class="team__overlay">
+              <div class="team__icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="team__text">
+            <h4 class="team__name">Full Name</h4>
+            <p class="team__position">DESIGNATION</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Team section ends -->
+
+
+
+
+
+    <!-- Blog section starts -->
+    <section class="blog container" id="blog">
+      <h3 class="section__subtitle">LATEST BLOG</h3>
+      <h2 class="section__title">
+        Read The Latest Articles from Our Blog Post
+      </h2>
+      <div class="blog__wrapper">
+        <article class="blog__item"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          <div class="blog__image">
+            <img src="assets/img/blog-1.jpg" alt="blog img" />
+          </div>
+          <a href="#" class="image__btn">Web Design</a>
+          <div class="blog__content">
+            <div class="blog__info">
+              <small class="blog__small">
+                <i class="blog__icon fa-solid fa-user-secret"></i>
+                <p class="blog__name">John Doe</p>
+              </small>
+              <small class="blog__small">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p class="blog__date">09 March 1966</p>
+              </small>
+            </div>
+            <h4 class="blog__heading">How to build a website</h4>
+            <h5 class="blog__text">
+              Dolor et eos labore stet justo sed est sed sed sed dolor stet amet
+            </h5>
+            <div class="blog__btn">
+              <a href="#" class="blog__btn__link">read more</a>
+              <i class="blog__btn__arrow fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </article>
+        <article class="blog__item"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <div class="blog__image">
+            <img src="assets/img/blog-2.jpg" alt="blog img" />
+          </div>
+          <a href="#" class="image__btn">Web Design</a>
+          <div class="blog__content">
+            <div class="blog__info">
+              <small class="blog__small">
+                <i class="blog__icon fa-solid fa-user-secret"></i>
+                <p class="blog__name">John Doe</p>
+              </small>
+              <small class="blog__small">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p class="blog__date">09 March 1966</p>
+              </small>
+            </div>
+            <h4 class="blog__heading">How to build a website</h4>
+            <h5 class="blog__text">
+              Dolor et eos labore stet justo sed est sed sed sed dolor stet amet
+            </h5>
+            <div class="blog__btn">
+              <a href="#" class="blog__btn__link">read more</a>
+              <i class="blog__btn__arrow fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </article>
+        <article class="blog__item"  data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
+          <div class="blog__image">
+            <img src="assets/img/blog-3.jpg" alt="blog img" />
+          </div>
+          <a href="#" class="image__btn">Web Design</a>
+          <div class="blog__content">
+            <div class="blog__info">
+              <small class="blog__small">
+                <i class="blog__icon fa-solid fa-user-secret"></i>
+                <p class="blog__name">John Doe</p>
+              </small>
+              <small class="blog__small">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p class="blog__date">09 March 1966</p>
+              </small>
+            </div>
+            <h4 class="blog__heading">How to build a website</h4>
+            <h5 class="blog__text">
+              Dolor et eos labore stet justo sed est sed sed sed dolor stet amet
+            </h5>
+            <div class="blog__btn">
+              <a href="#" class="blog__btn__link">read more</a>
+              <i class="blog__btn__arrow fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Blog section ends -->
+
+
+
+
+
+    <!-- REQUEST A QUOTE section starts -->
+    <section class="contact container" id="contact">
+      <article class="contact__item"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+        <h2 class="section__subtitle">REQUEST A QUOTE</h2>
+        <h3 class="section__title">
+          Need A Free Quote? Please Feel Free to Contact Us
+        </h3>
+        <div class="contact__box">
+          <div class="contact__box__item">
+            <i class="fa-solid fa-reply"></i>
+            <span>Reply within 24 hours</span>
+          </div>
+          <div class="contact__box__item">
+            <i class="fa-solid fa-phone"></i>
+            <span>24 hrs telephone support</span>
+          </div>
+          <p class="contact__p">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
+            sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
+            et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
+            tempor eirmod magna dolore erat amet
+          </p>
+        </div>
+        <div class="contact__contact">
+          <i class="fa-solid fa-phone"></i>
+          <div class="contact__contact__text">
+            <p>Call to ask any question</p>
+            <h5>+012 345 6789</h5>
+          </div>
+        </div>
+      </article>
+      <article class="contact__item"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+        <form action="some_page.php" method="GET">
+          <input
+            type="text"
+            placeholder="your name"
+            id=""
+            class="form__element"
+          />
+          <input
+            type="email"
+            placeholder="your Email"
+            id=""
+            class="form__element"
+          />
+          <select name="" id="" class="form__select">
+            <option selected="">Select A Service</option>
+            <option value="1">Service 1</option>
+            <option value="2">Service 2</option>
+            <option value="3">Service 3</option>
+          </select>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="7"
+            placeholder="Message"
+            class="form__textArea"
+          ></textarea>
+          <button>request a quote</button>
+        </form>
+      </article>
+    </section>
+    <!-- REQUEST A QUOTE section ends -->
+
+
+
+
+
+    <!-- Testimonial section starts -->
+    <section id="testimonial" class="testimonial">
+      <h3 class="section__subtitle">TESTIMONIAL</h3>
+      <h2 class="section__title">
+        What Our Clients Say About Our Digital Services
+      </h2>
+      <div class="testimonial__wrapper container">
+        <article class="testimonial__item"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          <div class="testimonial__info">
+            <img
+              src="assets/img/carousel-1.jpg"
+              class="testimonialImg"
+              alt="testimonial img"
+            />
+            <div class="testimonial__content">
+              <h4 class="testimonial__name">client name</h4>
+              <h5 class="testimonial__profession">profession</h5>
+            </div>
+          </div>
+          <p class="testimonial__p">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            facere fugit aliquid, sit commodi architecto saepe dolorum maiores
+            ducimus sint?
+          </p>
+        </article>
+        <article class="testimonial__item"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <div class="testimonial__info">
+            <img
+              src="assets/img/carousel-1.jpg"
+              class="testimonialImg"
+              alt="testimonial img"
+            />
+            <div class="testimonial__content">
+              <h4 class="testimonial__name">client name</h4>
+              <h5 class="testimonial__profession">profession</h5>
+            </div>
+          </div>
+          <p class="testimonial__p">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            facere fugit aliquid, sit commodi architecto saepe dolorum maiores
+            ducimus sint?
+          </p>
+        </article>
+        <article
+          class="testimonial__item"
+          data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000"
+        >
+          <div class="testimonial__info">
+            <img
+              src="assets/img/carousel-1.jpg"
+              class="testimonialImg"
+              alt="testimonial img"
+            />
+            <div class="testimonial__content">
+              <h4 class="testimonial__name">client name</h4>
+              <h5 class="testimonial__profession">profession</h5>
+            </div>
+          </div>
+          <p class="testimonial__p">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            facere fugit aliquid, sit commodi architecto saepe dolorum maiores
+            ducimus sint?
+          </p>
+        </article>
+      </div>
+      <div class="testimonial__dots">
+        <div class="fa fa-dot-circle-o active">
+          <i class="fa fa-circle" aria-hidden="true"></i>
+        </div>
+        <div class="fa fa-dot-circle-o">
+          <i class="fa fa-circle" aria-hidden="true"></i>
+        </div>
+        <div class="fa fa-dot-circle-o">
+          <i class="fa fa-circle" aria-hidden="true"></i>
+        </div>
+        <div class="fa fa-dot-circle-o">
+          <i class="fa fa-circle" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial section ends -->
+
+
+
+
+
+    <!-- Services section starts -->
+    <section class="services container" id="services">
+      <h3 class="section__subtitle">OUR SERVICES</h3>
+      <h2 class="section__title">
+        Custom IT Solutions for Your Successful Business
+      </h2>
+      <div class="services__wrapper">
+        <article class="services__item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          <div class="services__item__icon">
+            <i class="fa-sharp fa-solid fa-shield-halved"></i>
+          </div>
+          <h5 class="services__text">Cyber Security</h5>
+          <p class="services__p">
+            Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum
+            dolore sed
+          </p>
+          <i class="fa-solid fa-arrow-right services__item__iconArrow"></i>
+        </article>
+        <article class="services__item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <div class="services__item__icon">
+            <i class="fa-solid fa-chart-pie fas"></i>
+          </div>
+          <h5 class="services__text">Data Analytics</h5>
+          <p class="services__p">
+            Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum
+            dolore sed
+          </p>
+          <i class="fa-solid fa-arrow-right services__item__iconArrow"></i>
+        </article>
+        <article class="services__item" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
+          <div class="services__item__icon">
+            <i class="fa-solid fa-code fas"></i>
+          </div>
+          <h5 class="services__text">Web Development</h5>
+          <p class="services__p">
+            Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum
+            dolore sed
+          </p>
+          <i class="fa-solid fa-arrow-right services__item__iconArrow"></i>
+        </article>
+        <article class="services__item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+          <div class="services__item__icon">
+            <i class="fa-brands fa-android fas"></i>
+          </div>
+          <h5 class="services__text">Apps Development</h5>
+          <p class="services__p">
+            Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum
+            dolore sed
+          </p>
+          <i class="fa-solid fa-arrow-right services__item__iconArrow"></i>
+        </article>
+        <article class="services__item" data-aos="fade-up" data-aos-delay="750" data-aos-duration="1000">
+          <div class="services__item__icon">
+            <i class="fa fa-search fas"></i>
+          </div>
+          <h5 class="services__text">SEO Optimization</h5>
+          <p class="services__p">
+            Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum
+            dolore sed
+          </p>
+          <i class="fa-solid fa-arrow-right services__item__iconArrow"></i>
+        </article>
+        <article class="services__item" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+          <h5 class="">Call Us For Quote</h5>
+          <p class="">
+            Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est
+            magna stet eirmod
+          </p>
+          <h6 class="">+012 345 6789</h6>
+        </article>
+      </div>
+    </section>
+    <!-- Services section ends -->
+
+
+
+
+
+    <!-- Work section starts -->
+    <section class="container works" id="works">
+      <h3 class="section__subtitle">WORK PROCESS</h3>
+      <h2 class="section__title">
+        Step By Step Simple & Clean Working Process
+      </h2>
+      <div class="works__wrapper">
+        <article class="works__item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+          <h4 class="works__heading">Research</h4>
+          <p class="works__p">
+            Eos vero dolore eirmod diam duo lorem magna sit sea dolore sanctus
+            sed et
+          </p>
+        </article>
+        <article class="works__item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <i class="fa-solid fa-sitemap fa-2xl"></i>
+          <h4 class="works__heading">Concept</h4>
+          <p class="works__p secondChild">
+            Eos vero dolore eirmod diam duo lorem magna sit sea dolore sanctus
+            sed et
+          </p>
+        </article>
+        <article class="works__item" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
+          <i class="fa-solid fa-code fa-2xl"></i>
+          <h4 class="works__heading">Development</h4>
+          <p class="works__p">
+            Eos vero dolore eirmod diam duo lorem magna sit sea dolore sanctus
+            sed et
+          </p>
+        </article>
+        <article class="works__item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+          <i class="fa-solid fa-check fa-2xl"></i>
+          <h4 class="works__heading">Finalization</h4>
+          <p class="works__p none">
+            Eos vero dolore eirmod diam duo lorem magna sit sea dolore sanctus
+            sed et
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Work section ends -->
+
+
+
+
+
+    <!-- Plans section starts -->
+    <section class="plans container" id="plans">
+      <h3 class="section__subtitle">PRICING PLANS</h3>
+      <h2 class="section__title">
+        We are Offering Competitive Prices for Our Clients
+      </h2>
+      <div class="plans__wrapper">
+        <article class="plans__item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          <div class="plans__header">
+            <h3 class="plans__heading">Basic Plan</h3>
+            <h5 class="plans__subheading">FOR SMALL SIZE BUSINESS</h5>
+          </div>
+          <h6 class="plans__price">
+            <small class="dollar__top">$</small><span>49:00</span>/month
+          </h6>
+          <ul class="plans__list">
+            <li class="plans__list__item">
+              <p class="plans__text">HTML5 & CSS3Bootstrap v5</p>
+              <i><i class="fa-solid fa-check"></i></i>
+            </li>
+            <li class="plans__list__item">
+              <p class="plans__text">Bootstrap v5</p>
+              <i><i class="fa-solid fa-check"></i></i>
+            </li>
+            <li class="plans__list__item">
+              <p class="plans__text">Responsive Layout</p>
+              <i><i class="fa-solid fa-xmark red"></i></i>
+            </li>
+            <li class="plans__list__item">
+              <p class="plans__text">Cross-browser Support</p>
+              <i><i class="fa-solid fa-xmark red"></i></i>
+            </li>
+          </ul>
+          <button type="button" class="plans__btn">order now</button>
+        </article>
+        <article class="plans__item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <div class="plans__header">
+            <h3 class="plans__heading">Standard Plan</h3>
+            <h5 class="plans__subheading">FOR MEDIUM SIZE BUSINESS</h5>
+          </div>
+          <h6 class="plans__price">
+            <small class="dollar__top">$</small><span>99:00</span>/month
+          </h6>
+          <ul class="plans__list">
+            <li class="plans__list__item">
+              <p class="plans__text">HTML5 & CSS3Bootstrap v5</p>
+              <i><i class="fa-solid fa-check"></i></i>
+            </li>
+            <li class="plans__list__item">
+              <p class="plans__text">Bootstrap v5</p>
+              <i><i class="fa-solid fa-check primary"></i></i>
+            </li>
+            <li class="plans__list__item">
+              <p class="plans__text">Responsive Layout</p>
+              <i><i class="fa-solid fa-check primary"></i></i>
+            </li>
+            <li class="plans__list__item">
+              <p class="plans__text">Cross-browser Support</p>
+              <i><i class="fa-solid fa-xmark red"></i></i>
+            </li>
+          </ul>
+          <button type="button" class="plans__btn">order now</button>
+        </article>
+        <article class="plans__item" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
+          <div class="plans__header">
+            <h3 class="plans__heading">Advanced Plan</h3>
+            <h5 class="plans__subheading">FOR LARGE SIZE BUSINESS</h5>
+          </div>
+          <h6 class="plans__price">
+            <small class="dollar__top">$</small><span>149:00</span>/month
+          </h6>
+          <ul class="plans__list">
+            <li class="plans__list__item">
+              <p class="plans__text">HTML5 & CSS3Bootstrap v5</p>
+              <i><i class="fa-solid fa-check"></i></i>
+            </li>
+            <li class="plans__list__item">
+              <p class="plans__text">Bootstrap v5</p>
+              <i><i class="fa-solid fa-check"></i></i>
+            </li>
+            <li class="plans__list__item">
+              <p class="plans__text">Responsive Layout</p>
+              <i><i class="fa-solid fa-check"></i></i>
+            </li>
+            <li class="plans__list__item">
+              <p class="plans__text">Cross-browser Support</p>
+              <i><i class="fa-solid fa-check primary"></i></i>
+            </li>
+          </ul>
+          <button type="button" class="plans__btn">order now</button>
+        </article>
+      </div>
+    </section>
+    <!-- Plans section ends -->
+
+
+
+
+
+    <!-- Footer section starts -->
+    <footer class="footer" id="footer">
+      <div class="footer__wrapper container">
+          <article class="footer__item">
+              <a href="index.html" class="footer__logo">
+                  <i class="fa-solid fa-user"></i>
+                  <h1 class="nav__heading">Startup</h1>
+              </a>
+              <p>Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo
+                  lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
+              <form action="" class="footer__form">
+                  <input type="text">
+                  <input type="submit" value="Sign Up">
+              </form>
+          </article>
+          <article class="footer__item">
+              <div class="footer__item__block">
+                  <h3 class="section__title">Get In Touch</h3>
+                  <div class="footer__item__info">
+                      <i class="fa-sharp fa-solid fa-location-dot"></i>
+                      <span>Main STreet 123, Belgrade</span>
+                  </div>
+                  <div class="footer__item__info">
+                      <i class="fa-solid fa-envelope"></i>
+                      <span>info@gmail.com</span>
+                  </div>
+                  <div class="footer__item__info">
+                      <i class="fa-solid fa-phone"></i>
+                      <span>0115678345</span>
+                  </div>
+                  <div class="footer__item__icons">
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-youtube"></i>
+                  </div>
+              </div>
+              <div class="footer__item__block">
+                  <h3 class="section__title">Quick Links</h3>
+                  <ul class="footer__list">
+                      <a href="index.html" class="footer__link">
+                          <i class="fa-solid fa-arrow-right"></i>
+                          Home
+                      </a>
+                      <a href="#about" class="footer__link">
+                          <i class="fa-solid fa-arrow-right"></i>
+                          About Us
+                      </a>
+                      <a href="#services" class="footer__link">
+                          <i class="fa-solid fa-arrow-right"></i>
+                          Our Services
+                      </a>
+                      <a href="#team" class="footer__link">
+                          <i class="fa-solid fa-arrow-right"></i>
+                          Meet The Team
+                      </a>
+                      <a href="#blog" class="footer__link">
+                          <i class="fa-solid fa-arrow-right"></i>
+                          Latest Blog
+                      </a>
+                      <a href="#contact" class="footer__link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Contact Us
+                    </a>
+                  </ul>
+              </div>
+              <div class="footer__item__block">
+                  <h3 class="section__title">Popular Links</h3>
+                  <ul class="footer__list">
+                    <a href="index.html" class="footer__link">
+                      <i class="fa-solid fa-arrow-right"></i>
+                      Home
+                  </a>
+                  <a href="#about" class="footer__link">
+                      <i class="fa-solid fa-arrow-right"></i>
+                      About Us
+                  </a>
+                  <a href="#services" class="footer__link">
+                      <i class="fa-solid fa-arrow-right"></i>
+                      Our Services
+                  </a>
+                  <a href="#team" class="footer__link">
+                      <i class="fa-solid fa-arrow-right"></i>
+                      Meet The Team
+                  </a>
+                  <a href="#blog" class="footer__link">
+                      <i class="fa-solid fa-arrow-right"></i>
+                      Latest Blog
+                  </a>
+                  <a href="#contact" class="footer__link">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    Contact Us
+                </a>
+                  </ul>
+              </div>
+          </article>
+      </div>
+      <div class="footer__copy">
+          <p>&copy;All Rights Reserved. Designed <a href="">ByMe</a></p>
+      </div>
+  </footer>
+    <!-- Footer section ends -->
+
+
+
+
+
+    <!-- Top to scroll dugme starts -->
+    <button
+      onclick="topFunction()"
+      id="scrollBtn"
+      title="Go to top"
+      class="fa-solid fa-arrow-up"
+    ></button>
+    <!-- Top to scroll dugme ends -->
+
+
+
+
+
+    <!-- MAIN JS FILE -->
+    <script src="assets/js/main.js"></script>
+
+
+
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>

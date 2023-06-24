@@ -1,0 +1,30 @@
+.wcu {
+  &__wrapper {
+    @include grid(3, 1fr);
+    place-items: center;
+    margin-top: 4rem;
+
+    @include breakPoint(1200px) {
+      grid-template-columns: 1fr;
+      place-items: start;
+    }
+
+    .wcu__item {
+      
+      i {
+        @include icon(3.5rem, 0px, 1rem, $primaryColor, white, $primaryColor);
+        cursor: auto;
+      }
+
+      h4 {
+        margin: 1rem 0;
+        font-size: 1.4rem;
+        color: $secondaryColor;
+      }
+
+      p:nth-child(3) {
+        margin-bottom: 3.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+.footer {
+  padding-top: 70px;
+  background-color: $secondaryColor;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+
+    .footer__item {
+      &:nth-child(1) {
+        width: 20%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: $primaryColor;
+        padding: 2rem;
+        text-align: justify;
+        color: white;
+        @include flex(center, center, column);
+
+        @include breakPoint(1200px) {
+          width: 30%;
+        }
+
+        @include breakPoint(992px) {
+          width: 80%;
+          padding-top: 3rem;
+          bottom: auto;
+          height: 35vh;
+        }
+
+        @include breakPoint(576px) {
+          width: 80%;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          height: 45vh;
+        }
+
+        .footer__logo {
+          @include flex(center, center, ro nowrap, 1rem);
+          color: white;
+          font-size: 2rem;
+        }
+
+        p {
+          padding: 1rem 0;
+        }
+
+        form {
+          display: flex;
+
+          input[type="text"] {
+            padding: 1rem .5rem;
+          }
+
+          input[type="submit"] {
+            padding: 1rem .5rem;
+            background-color: $secondaryColor;
+            color: white;
+          }
+
+          @include breakPoint(992px) {
+            width: 80%;
+            justify-content: center;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        width: 70%;
+        margin-left: 30%;
+        display: flex;
+        justify-content: space-between;
+
+        @include breakPoint(1200px) {
+          flex-direction: column;
+          width: 60%;
+          margin-left: 40%;
+        }
+
+        @include breakPoint(992px) {
+          width: 100%;
+          margin-left: 0;
+          margin-top: 25vh;
+        }
+
+        @include breakPoint(576px) {
+          width: 100%;
+          margin-left: 0;
+          margin-top: 45vh;
+        }
+
+        .footer__item__block {
+          flex-basis: 30%;
+          margin-bottom: 2rem;
+
+          h3 {
+            text-align: left;
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            max-width: 100%;
+
+            &::after {
+              margin: 0;
+            }
+
+            &::before {
+              @include positioning(absolute, auto, auto, 0, 15%);
+
+              @include breakPoint(1200px) {
+                @include positioning(absolute, auto, auto, 0, 7%);
+              }
+            }
+          }
+
+          .footer__item__info {
+            margin-bottom: 0.8rem;
+
+            i {
+              color: $primaryColor;
+              margin-right: 0.7rem;
+            }
+
+            span {
+              color: white;
+            }
+          }
+
+          .footer__item__icons {
+            i {
+              @include icon(2rem);
+
+              &:not(:last-child) {
+                margin-right: 0.3rem;
+              }
+            }
+          }
+
+          .footer__list {
+            .footer__link {
+              display: block;
+              color: white;
+
+              &:hover {
+                transform: translateX(20px);
+              }
+
+              i {
+                color: $primaryColor;
+              }
+
+              &:not(:last-child) {
+                margin-bottom: 0.7rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__copy {
+    background-color: tomato;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+  }
+}

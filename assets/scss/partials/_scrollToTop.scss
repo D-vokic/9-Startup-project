@@ -1,0 +1,10 @@
+#scrollBtn {
+    @include btn();
+
+    display: none; 
+    position: fixed;
+    bottom: 3rem; 
+    right: 2rem; 
+    padding: 1rem; 
+    font-size: 1.1rem; 
+  }

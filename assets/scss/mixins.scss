@@ -1,0 +1,107 @@
+@mixin flex($justify: center,
+  $align: center,
+  $flow: row nowrap,
+  $gap: 0px,
+  $basis: auto) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $flow;
+  gap: $gap;
+
+  @if ($flow ==wrap) {
+    &>* {
+      flex-basis: $basis;
+    }
+  }
+}
+
+@mixin grid($numberOfColumns, $value, $gap: 2rem) {
+  display: grid;
+  grid-template-columns: repeat($numberOfColumns, $value);
+  gap: $gap;
+}
+
+@mixin positioning($position: absolute,
+  $top: auto,
+  $right: auto,
+  $bottom: auto,
+  $left: auto) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+
+  @if ($top ==50%) {
+    transform: translateY(-50%);
+  }
+
+  @else if($left ==50% or $right ==50%) {
+    transform: translateX(-50%);
+  }
+
+  @else if($left ==50% and $top ==50%) {
+    transform: translate(-50%);
+  }
+}
+
+@mixin icon($units: 3rem,
+  $borderRadius: 0px,
+  $fontSize: 1rem,
+  $bg: $primaryColor,
+  $color: white,
+  $bgHover: $secondaryColor,
+  $colorHover: white) {
+  height: $units;
+  width: $units;
+  line-height: $units;
+  border-radius: $borderRadius;
+  font-size: $fontSize;
+  text-align: center;
+  cursor: pointer;
+  background: $bg;
+  color: $color;
+
+  &:hover {
+    background: $bgHover;
+    color: $colorHover;
+  }
+}
+
+@mixin btn($bg: $primaryColor,
+  $color: #fff,
+  $weight: 600,
+  $size: 1.1rem,
+  $borderColor: transparent,
+  $bg1: $primaryColor,
+  $color1: $secondaryColor,
+  $borderColor1: transparent) {
+  background-color: $bg;
+  color: $color;
+  font-weight: $weight;
+  font-size: $size;
+  border: 1px solid $borderColor;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+  text-transform: capitalize;
+
+  &:hover {
+    background-color: $bg1;
+    color: $color1;
+    border: 1px solid $borderColor1;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@mixin breakPoint($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}

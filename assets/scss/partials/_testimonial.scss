@@ -1,0 +1,79 @@
+
+.testimonial {
+
+  &__wrapper {
+    @include flex(center, center, wrap);
+    margin-top: 3rem;
+
+    article{
+      flex: 1 0 200px;
+      padding: 2rem;
+      background-color: #f1eaea;
+
+        @include breakPoint(992px){
+          flex: 1 0 80%;
+        };
+
+        @include breakPoint(576px){
+          flex: 1 0 100%;
+        };
+
+      &:nth-child(2){
+        background-color: white;
+        box-shadow: 10px 10px 7px 0px rgba(0,0,0,0.15);
+
+        @include breakPoint(992px){
+          box-shadow: none;
+        };
+      }
+
+      .testimonial__info{
+        @include flex(flex-start, center, row nowrap, 1rem);
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $secondaryColor;
+
+        @include breakPoint(992px){
+          flex-direction: column
+        };
+          
+        img{
+          width: 30%;
+
+          @include breakPoint(576px){
+            width: 150px;
+          };
+        }
+
+        .testimonial__content{
+
+          h4{
+            color: $primaryColor;
+            font-size: 1.5rem;
+          }
+
+          h5{
+            color: $secondaryColor;
+            text-transform: uppercase;
+          }
+        }  
+      }
+
+      p{
+        padding: 2rem 0;
+      }
+    }
+  }
+
+  .testimonial__dots{
+    @include flex(center, center, wrap, 1rem);
+   margin-top: 2rem;
+
+   .active{
+    color: $primaryColor;
+   }
+
+   &:not(:first-child){
+    color: $text;
+   }
+  }
+}

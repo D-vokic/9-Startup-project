@@ -1,0 +1,190 @@
+.header {
+  background: linear-gradient(rgba(9, 30, 62, 0.7), rgba(9, 30, 62, 0.7)),
+    url("/assets/img/carousel-1.jpg");
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  
+  @include breakPoint(768px) {
+    height: 80vh;
+  }
+
+  .nav {
+    @include flex(space-between);
+    padding: 0rem 5rem;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+    height: 10vh;
+    background-color: transparent;
+
+    @include breakPoint(576px) {
+      padding: 1rem 2rem;
+    }
+
+    &__logo {
+      @include flex(center, center, row nowrap, 0.5rem);
+
+      i {
+        color: white;
+        font-size: 2.5rem;
+
+        @include breakPoint(576px) {
+          font-size: 2rem;
+        }
+      }
+
+      .nav__heading {
+        color: white;
+        font-size: 2.5rem;
+
+        @include breakPoint(576px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &__list {
+      @include flex(center, center, row nowrap, 2rem);
+
+      @include breakPoint(992px) {
+        display: none;
+      }
+
+      .nav__item {
+        .nav__link {
+          color: white;
+          font-size: 1.1rem;
+          display: inline-block;
+          line-height: 10vh;
+          border: 1px solid transparent;
+
+          &:hover {
+            color: #89cfef;
+            border-bottom: 2px solid $primaryColor;
+          }
+
+          &:hover + i {
+            color: $primaryColor;
+          }
+
+          &:hover ~ .nav__dropdown {
+            opacity: 1;
+          }
+        }
+
+        i {
+          color: white;
+        }
+
+        &.flex {
+          @include flex(space-between, center, row nowrap, 0.5rem);
+          position: relative;
+        }
+
+        .nav__dropdown {
+          background-color: white;
+          padding: 1rem;
+          position: absolute;
+          top: 100%;
+          opacity: 0;
+
+          &:hover {
+            background-color: $text;
+            opacity: 1;
+          }
+
+          a {
+            color: $secondaryColor;
+            display: block;
+
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    &__hamburger {
+      display: none;
+
+      @include breakPoint(992px) {
+        display: block;
+      }
+
+      i {
+        color: white;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__content {
+    @include flex(center, center, column);
+    height: 90vh;
+    color: white;
+
+    @include breakPoint(768px) {
+      height: 60vh;
+    }
+
+    .header__p {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      font-weight: 300;
+
+      @include breakPoint(576px) {
+        font-size: 1rem;
+      }
+    }
+
+    .header__heading {
+      text-transform: capitalize;
+      font-size: 4.5rem;
+      max-width: 800px;
+      margin: 1.5rem auto;
+      text-align: center;
+      font-weight: 800;
+
+      @include breakPoint(768px) {
+        font-size: 3rem;
+      }
+
+      @include breakPoint(576px) {
+        max-width: 100%;
+        font-size: 1.8rem;
+      }
+    }
+
+    .header__btns {
+      a {
+        &:first-child {
+          @include btn(
+            $primaryColor,
+            #fff,
+            400,
+            1.1rem,
+            transparent,
+            $primaryColor,
+            #000
+          );
+          margin-right: 1rem;
+        }
+
+        &:last-child {
+          @include btn(
+            transparent,
+            #fff,
+            400,
+            1.1rem,
+            #fff,
+            #fff,
+            $secondaryColor,
+            #fff
+          );
+        }
+      }
+    }
+  }
+}

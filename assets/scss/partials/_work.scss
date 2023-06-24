@@ -1,0 +1,78 @@
+.works {
+  &__wrapper {
+    @include flex(space-between, center, wrap);
+    margin-top: 3rem;
+
+    @include breakPoint(1200px) {
+      gap: 2rem;
+    }
+
+    .works__item {
+      flex-basis: 22%;
+      text-align: center;
+      position: relative;
+
+      @include breakPoint(1200px) {
+        flex-basis: 45%;
+      }
+
+      @include breakPoint(768px) {
+        flex-basis: 100%;
+      }
+      i {
+        @include icon(
+          4rem,
+          0px,
+          1rem,
+          $primaryColor,
+          white,
+          $primaryColor,
+          white
+        );
+        color: white;
+
+        &:hover {
+          cursor: auto;
+        }
+      }
+
+      .works__heading {
+        margin: 1rem 0;
+        font-size: 1.4rem;
+        color: $secondaryColor;
+      }
+
+      .works__p {
+        &::after {
+          position: absolute;
+          content: "\f101";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          font-size: 2rem;
+          color: #dddddd;
+          top: 5%;
+          right: -10%;
+          animation: workArrow 2s infinite linear;
+
+          @include breakPoint(768px) {
+            display: none;
+          }
+        }
+      }
+
+      .secondChild {
+        @include breakPoint(1200px) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .none {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
