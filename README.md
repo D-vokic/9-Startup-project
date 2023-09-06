@@ -2,7 +2,7 @@
 https://D-vokic.github.io/9-Startup-project/
 Hi, I am Duško.
 
-![Hi](https://github.com/Duskorsl/10-AL_TECH-project/assets/105879280/8a8d79b4-b9ca-4f4a-a5e4-ad47a1240e69)
+![Hi](https://github.com/Duskorsl/8-SASS-JS-Talent-Talk-project/assets/105879280/0c988ab4-284f-41cd-9309-763304eeb7d5)
 
 
 Front-end developer and high school teacher.
